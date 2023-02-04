@@ -1,0 +1,40 @@
+{% extends "AppCoder/padre.html" %}
+
+{% load static %}
+
+{% block contenido %}
+
+        <!-- Header-->
+        <header class="masthead text-center text-white">
+            <div class="masthead-content">
+                <div class="container px-5">
+                    <h1 class="masthead-heading mb-0">Productos de Cocina</h1>
+                    <h2 class="mb-0">Productos pensados para Chefs</h2>
+                    <a class="btn btn-primary btn-xl rounded-pill mt-5" href="sobreMi">Sobre mi...</a>
+                </div>
+            </div>
+            <div class="bg-circle-1 bg-circle"></div>
+            <div class="bg-circle-2 bg-circle"></div>
+            <div class="bg-circle-3 bg-circle"></div>
+            <div class="bg-circle-4 bg-circle"></div>
+        </header>
+
+        <!-- Content section 1-->
+        <section id="scroll">
+            
+            <div class="container px-5">
+            <br><br>
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="p-5">
+                           
+                            <h2 style="text-align: center;">{{mensaje}}</h3>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+{% endblock %}

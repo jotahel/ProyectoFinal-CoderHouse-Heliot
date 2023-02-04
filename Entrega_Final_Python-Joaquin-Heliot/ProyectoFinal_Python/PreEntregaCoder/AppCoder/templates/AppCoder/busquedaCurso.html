@@ -1,0 +1,42 @@
+{% extends "AppCoder/padre.html" %}
+
+{% load static %}
+
+{% block contenido %}
+
+        <!-- Header-->
+        <header class="masthead text-center text-white">
+            <div class="masthead-content">
+                <div class="container px-5">
+                    <h1 class="masthead-heading mb-0">Buscar cursos...</h1>
+                
+                </div>
+            </div>
+            <div class="bg-circle-1 bg-circle"></div>
+            <div class="bg-circle-2 bg-circle"></div>
+            <div class="bg-circle-3 bg-circle"></div>
+            <div class="bg-circle-4 bg-circle"></div>
+        </header>
+
+        <!-- Content section 1-->
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="p-5">
+                            <h2 class="display-4">Ingresar nivel</h2>
+                            
+                                <br>
+                                <form action="/AppCoder/buscar/" method="GET">
+                                    
+                                    <input type="text" name="curso" id="curso">
+                                    <br><br>
+                                    <input type="submit" value="Buscar">
+
+                                </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+{% endblock %}
